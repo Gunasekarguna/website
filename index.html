@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Title</title>
-  <link rel="stylesheet" type="text/css" href="color.css"> <!-- CSS link -->
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>This is a heading</h1>
-  <p>This is a paragraph.</p>
-  
-  <button onclick="showMessage()">Click Me</button>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return validateLogin()">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button type="submit">Login</button>
+      <p id="error-message"></p>
+    </form>
+  </div>
 
-  <!-- Link to external JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
